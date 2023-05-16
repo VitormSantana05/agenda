@@ -28,13 +28,113 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.Nome = new System.Windows.Forms.Label();
+            this.Sobrenome = new System.Windows.Forms.Label();
+            this.Telefone = new System.Windows.Forms.Label();
+            this.btnAddContato = new System.Windows.Forms.Button();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.txtTelefone = new System.Windows.Forms.TextBox();
+            this.txtSobrenome = new System.Windows.Forms.TextBox();
+            this.lscontato = new System.Windows.Forms.ListBox();
+            this.SuspendLayout();
+            // 
+            // Nome
+            // 
+            this.Nome.AutoSize = true;
+            this.Nome.Location = new System.Drawing.Point(46, 61);
+            this.Nome.Name = "Nome";
+            this.Nome.Size = new System.Drawing.Size(35, 13);
+            this.Nome.TabIndex = 0;
+            this.Nome.Text = "Nome";
+            this.Nome.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // Sobrenome
+            // 
+            this.Sobrenome.AutoSize = true;
+            this.Sobrenome.Location = new System.Drawing.Point(46, 89);
+            this.Sobrenome.Name = "Sobrenome";
+            this.Sobrenome.Size = new System.Drawing.Size(61, 13);
+            this.Sobrenome.TabIndex = 1;
+            this.Sobrenome.Text = "Sobrenome";
+            this.Sobrenome.Click += new System.EventHandler(this.Sobrenome_Click);
+            // 
+            // Telefone
+            // 
+            this.Telefone.AutoSize = true;
+            this.Telefone.Location = new System.Drawing.Point(46, 120);
+            this.Telefone.Name = "Telefone";
+            this.Telefone.Size = new System.Drawing.Size(49, 13);
+            this.Telefone.TabIndex = 2;
+            this.Telefone.Text = "Telefone";
+            // 
+            // btnAddContato
+            // 
+            this.btnAddContato.Location = new System.Drawing.Point(58, 155);
+            this.btnAddContato.Name = "btnAddContato";
+            this.btnAddContato.Size = new System.Drawing.Size(158, 23);
+            this.btnAddContato.TabIndex = 3;
+            this.btnAddContato.Text = "Iniciar contato";
+            this.btnAddContato.UseVisualStyleBackColor = true;
+            // 
+            // txtNome
+            // 
+            this.txtNome.Location = new System.Drawing.Point(116, 58);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(100, 20);
+            this.txtNome.TabIndex = 4;
+            // 
+            // txtTelefone
+            // 
+            this.txtTelefone.Location = new System.Drawing.Point(116, 120);
+            this.txtTelefone.Name = "txtTelefone";
+            this.txtTelefone.Size = new System.Drawing.Size(100, 20);
+            this.txtTelefone.TabIndex = 5;
+            // 
+            // txtSobrenome
+            // 
+            this.txtSobrenome.Location = new System.Drawing.Point(116, 89);
+            this.txtSobrenome.Name = "txtSobrenome";
+            this.txtSobrenome.Size = new System.Drawing.Size(100, 20);
+            this.txtSobrenome.TabIndex = 6;
+            // 
+            // lscontato
+            // 
+            this.lscontato.FormattingEnabled = true;
+            this.lscontato.Location = new System.Drawing.Point(305, 61);
+            this.lscontato.Name = "lscontato";
+            this.lscontato.Size = new System.Drawing.Size(205, 238);
+            this.lscontato.TabIndex = 7;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(564, 321);
+            this.Controls.Add(this.lscontato);
+            this.Controls.Add(this.txtSobrenome);
+            this.Controls.Add(this.txtTelefone);
+            this.Controls.Add(this.txtNome);
+            this.Controls.Add(this.btnAddContato);
+            this.Controls.Add(this.Telefone);
+            this.Controls.Add(this.Sobrenome);
+            this.Controls.Add(this.Nome);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label Nome;
+        private System.Windows.Forms.Label Sobrenome;
+        private System.Windows.Forms.Label Telefone;
+        private System.Windows.Forms.Button btnAddContato;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.TextBox txtTelefone;
+        private System.Windows.Forms.TextBox txtSobrenome;
+        private System.Windows.Forms.ListBox lscontato;
     }
 }
 
